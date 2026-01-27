@@ -1,79 +1,138 @@
-﻿/* Reset cơ bản */
+/* Reset và font */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Header */
-header {
-    background: linear-gradient(135deg, #4a90e2, #007acc);
-    color: #fff;
-    text-align: center;
-    padding: 3rem 1rem;
-}
-
-    header h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-    header p {
-        font-size: 1.2rem;
-        opacity: 0.9;
-    }
-
-/* Section chung */
-section {
-    padding: 2rem 10%;
-}
-
-    section h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-        color: #007acc;
-        border-bottom: 2px solid #007acc;
-        display: inline-block;
-        padding-bottom: 0.3rem;
-    }
-
-/* About */
-#about p {
-    margin-bottom: 0.8rem;
-}
-
-/* Projects */
-.project {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
     background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: #7C859B;
 }
 
-    .project:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+/* Định nghĩa biến cho chiều rộng sidebar */
+:root {
+    --sidebar-width: 500px; /* chỉ cần đổi giá trị này */
+}
+
+/* Sidebar trái cố định */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width);
+    height: 100vh;
+    background: #A03032;
+    color: #7C859B;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.profile .avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-bottom: 1rem;
+}
+
+.profile h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile .tagline {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.profile .btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: #fff;
+    color: #7C859B;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Icon mạng xã hội */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: auto;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+    .icon:hover {
+        transform: scale(1.1);
     }
 
-    .project h3 {
-        margin-bottom: 0.5rem;
-        color: #333;
+    .icon.youtube {
+        background-image: url('icons/youtube.png');
+    }
+
+    .icon.github {
+        background-image: url('icons/github.png');
+    }
+
+    .icon.twitter {
+        background-image: url('icons/twitter.png');
+    }
+
+    .icon.linkedin {
+        background-image: url('icons/linkedin.png');
+    }
+
+    .icon.email {
+        background-image: url('icons/email.png');
+    }
+
+/* Nội dung bên phải */
+.content {
+    margin-left: var(--sidebar-width); /* tự động theo width sidebar */
+    max-width: 800px;
+    margin-right: auto;
+    padding: 2rem 3rem;
+}
+
+section h2 {
+    color: #7C859B;
+    margin-bottom: 1rem;
+}
+
+.project {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+    .project img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 1rem;
     }
 
     .project a {
-        display: inline-block;
-        margin-right: 1rem;
+        color: #7C859B;
         text-decoration: none;
-        color: #007acc;
         font-weight: bold;
     }
 
@@ -81,21 +140,40 @@ section {
             text-decoration: underline;
         }
 
-/* Contact */
-#contact a {
-    color: #007acc;
-    text-decoration: none;
-}
-
-    #contact a:hover {
-        text-decoration: underline;
-    }
-
 /* Footer */
 footer {
-    background: #333;
-    color: #fff;
+    background: #7C859B;
+    color: #7C859B;
     text-align: center;
     padding: 1rem;
-    font-size: 0.9rem;
 }
+
+.contact {
+    margin-top: 4rem;
+    text-align: left;
+}
+
+    .contact p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .contact-list li {
+        display: flex;
+        justify-content: left;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+/* Icon bổ sung */
+.icon.home {
+    background-image: url('icons/home.png');
+}
+

@@ -1,54 +1,77 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Hà Hải Hiếu</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hà Hải Hiếu - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Xin chào, tôi là Hà Hải Hiếu</h1>
-        <p>Unity Developer | Web Developer | Designer</p>
-    </header>
-
-    <section id="about">
-        <h2>Giới thiệu</h2>
-        <p>Tôi là một Junior Developer với niềm đam mê lập trình và thiết kế sản phẩm số.</p>
-
-        <h2>Học vấn</h2>
-        <p>Cử nhân Khoa học Máy tính - Đại Học Công Nghiệp Hà Nội (GPA: 3.48/4)</p>
-        <p>Thạc sĩ Hệ thống Thông tin - Đại Học Công Nghiệp Hà Nội (GPA: 3.7/4)</p>
-
-        <h2>Kinh nghiệm</h2>
-        <p><strong>Income Studio</strong> (04/2024 - 10/2024)</p>
-        <p><strong>Wejoy Studio</strong> (04/2024 - nay)</p>
-    </section>
-
-    <section id="projects">
-        <h2>Dự án</h2>
-        <div class="project">
-            <h3>Game Puzzle Unity</h3>
-            <p>Phát triển bằng Unity, C#, tích hợp hiệu ứng âm thanh và UI hiện đại.</p>
-            <a href="#">Xem demo</a>
-            <a href="#">GitHub</a>
+    <!-- Sidebar trái -->
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="images/avatar.png" alt="Hà Hải Hiếu" class="avatar" />
+            <h1>Hà Hải Hiếu</h1>
+            <p class="tagline">
+                Hi, I'm Ha Hai Hieu<br />
+                Passionate Game Developer with experience creating 2D and 3D multiplatform games
+            </p>
+            <a href="#projects" class="btn">Xem sản phẩm</a>
         </div>
-        <div class="project">
-            <h3>Website Portfolio</h3>
-            <p>Sử dụng HTML, CSS, JavaScript để xây dựng portfolio cá nhân.</p>
-            <a href="#">Xem demo</a>
-            <a href="#">GitHub</a>
+
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/username" class="icon linkedin"></a>
+            <a href="mailto:youremail@gmail.com" class="icon email"></a>
+            <a href="https://github.com/username" class="icon github"></a>
         </div>
-    </section>
+    </aside>
 
-    <section id="contact">
-        <h2>Liên hệ</h2>
-        <p>Email: <a href="mailto:youremail@gmail.com">youremail@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/username">linkedin.com/in/username</a></p>
-    </section>
+    <!-- Nội dung bên phải -->
+    <main class="content">
+        <section id="projects" class="projects">
+            <h2>Project</h2>
 
-    <footer>
-        <p>© 2026 Hà Hải Hiếu. All rights reserved.</p>
-    </footer>
+            <div class="project">
+                <img src="images/game-puzzle.png" alt="Game Puzzle Unity" />
+                <h3>Game Puzzle Unity</h3>
+                <p>Phát triển bằng Unity, C#, tích hợp hiệu ứng âm thanh và UI hiện đại.</p>
+                <a href="#">Xem demo</a> | <a href="#">GitHub</a>
+            </div>
+
+            <div class="project">
+                <img src="images/portfolio-site.png" alt="Website Portfolio" />
+                <h3>Website Portfolio</h3>
+                <p>Sử dụng HTML, CSS, JavaScript để xây dựng portfolio cá nhân.</p>
+                <a href="#">Xem demo</a> | <a href="#">GitHub</a>
+            </div>
+
+            <div class="project">
+                <img src="images/portfolio-site.png" alt="Website Portfolio" />
+                <h3>Website Portfolio</h3>
+                <p>Sử dụng HTML, CSS, JavaScript để xây dựng portfolio cá nhân.</p>
+                <a href="#">Xem demo</a> | <a href="#">GitHub</a>
+            </div>
+
+            <div class="project">
+                <img src="images/portfolio-site.png" alt="Website Portfolio" />
+                <h3>Website Portfolio</h3>
+                <p>Sử dụng HTML, CSS, JavaScript để xây dựng portfolio cá nhân.</p>
+                <a href="#">Xem demo</a> | <a href="#">GitHub</a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+            <p>
+                If you're interested in my work, feel free to reach out to me via my LinkedIn profile or by sending me an email.
+            </p>
+            <ul class="contact-list">
+                <li><span class="icon linkedin"></span> <a href="https://linkedin.com/in/username">LinkedIn Profile</a></li>
+                <li><span class="icon email"></span> <a href="mailto:youremail@gmail.com">Email me</a></li>
+                <li><span class="icon home"></span> Caldas, Colombia</li>
+            </ul>
+        </section>
+
+    </main>
 </body>
 </html>
