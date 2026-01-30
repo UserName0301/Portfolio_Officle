@@ -260,3 +260,37 @@ footer {
     background-image: url('icons/home.png');
 }
 
+
+@media (max-width: 768px) {
+  :root {
+    --sidebar-width: 100%;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 1.5rem;
+  }
+
+  .profile .avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .tagname {
+    font-size: 1.5rem;
+  }
+
+  .profile .tagline {
+    font-size: 1rem;
+  }
+
+  .project:hover {
+    transform: none;
+  }
+}
