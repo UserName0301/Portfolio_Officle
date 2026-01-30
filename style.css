@@ -67,7 +67,7 @@ a:hover {
 .profile .tagline {
     font-size: 1.25rem;
     line-height: 1.4;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     color: #c4c1c1;
 }
 
@@ -147,6 +147,12 @@ a:hover {
     padding: 2rem 3rem;
 }
 
+.content_project{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;  
+}
+
 section h2 {
     color: #7C859B;
     margin-bottom: 0.5rem;
@@ -163,6 +169,11 @@ section h2 {
     max-width: 600px;
     margin: 0 auto 5rem; 
 }
+
+.projects h2 {
+  margin-bottom: 2rem; 
+}
+
 .project:hover{
     transform: scale(1.05);
 }
@@ -294,4 +305,8 @@ footer {
   .project:hover {
     transform: none;
   }
+
+  .content_project{
+    grid-template-columns: 1fr;
+    }
 }
