@@ -11,8 +11,8 @@ html {
 .dashed-underline {  
   text-decoration-line: underline;
   text-decoration-style: dashed;
-  text-decoration-color: #7C859B;
-  text-decoration-thickness: 0.5px;
+  text-decoration-color: #71788a;
+  text-decoration-thickness: 0.25px;
   text-underline-offset: 1.5px;
 }
 
@@ -331,4 +331,78 @@ footer {
   .content_project{
     grid-template-columns: 1fr;
     }
+}
+
+.Title-Part{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+/* vùng about me */
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .info-block,
+  .info-block.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.aboutMe {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 20px;
+}
+
+.info-block {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 60px;
+}
+
+.info-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.info-text {
+  flex: 1;
+}
+
+.info-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.item {
+  margin-bottom: 20px;
+}
+
+.item h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.item p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.item span {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.info-image {
+  flex: 1;
+  text-align: center;
+}
+
+.info-image img {
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
