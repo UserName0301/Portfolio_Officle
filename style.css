@@ -160,7 +160,7 @@ section h2 {
     margin-bottom: 5rem;
     text-align: center;
     transition: transform 0.3s ease;
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto 5rem; 
 }
 .project:hover{
