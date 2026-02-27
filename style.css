@@ -323,6 +323,14 @@ footer {
   flex: 1;
 }
 
+.info-text {
+  text-align: left;
+}
+
+.info-text ul {
+  padding-left: 20px; /* đảm bảo có thụt đầu dòng */
+}
+
 .info-text h3 {
   font-size: 1.5rem;
   margin-bottom: 20px;
